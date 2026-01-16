@@ -58,13 +58,14 @@ const Navbar = ({ onGetStartedClick, onTeamClick, currentPage = 'landing' }) => 
               <a href="#stories" className="text-white hover:text-gray-300 transition-colors duration-300 text-xs lg:text-sm font-medium whitespace-nowrap">Stories</a>
               <a href="#resources" className="text-white hover:text-gray-300 transition-colors duration-300 text-xs lg:text-sm font-medium whitespace-nowrap">Resources</a>
               <a href="#team" onClick={(e) => { e.preventDefault(); onTeamClick && onTeamClick(); }} className="text-white hover:text-gray-300 transition-colors duration-300 text-xs lg:text-sm font-medium whitespace-nowrap">Team</a>
-              <button
+              {/* Get Started button commented out for now */}
+              {/* <button
                 onClick={onGetStartedClick}
                 className="px-3 lg:px-5 py-1.5 md:py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 text-xs text-white whitespace-nowrap"
                 style={{ background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.4), rgba(118, 75, 162, 0.4))', border: '1px solid rgba(102, 126, 234, 0.6)' }}
               >
                 Get Started
-              </button>
+              </button> */}
             </>
           )}
         </div>
@@ -104,13 +105,14 @@ const Navbar = ({ onGetStartedClick, onTeamClick, currentPage = 'landing' }) => 
                 <a href="#stories" onClick={() => setMobileMenuOpen(false)} className="text-white hover:bg-white hover:bg-opacity-10 transition-colors duration-300 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg block">Stories</a>
                 <a href="#resources" onClick={() => setMobileMenuOpen(false)} className="text-white hover:bg-white hover:bg-opacity-10 transition-colors duration-300 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg block">Resources</a>
                 <a href="#team" onClick={(e) => { e.preventDefault(); onTeamClick && onTeamClick(); setMobileMenuOpen(false); }} className="text-white hover:bg-white hover:bg-opacity-10 transition-colors duration-300 text-xs sm:text-sm font-medium px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg block">Team</a>
-                <button
+                {/* Get Started button commented out for now */}
+                {/* <button
                   onClick={() => { onGetStartedClick(); setMobileMenuOpen(false); }}
                   className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg font-semibold transition-all duration-300 text-xs text-white mt-1 sm:mt-2 w-full"
                   style={{ background: 'linear-gradient(135deg, rgba(102, 126, 234, 0.6), rgba(118, 75, 162, 0.6))', border: '1px solid rgba(102, 126, 234, 0.6)' }}
                 >
                   Get Started
-                </button>
+                </button> */}
               </>
             )}
           </div>
