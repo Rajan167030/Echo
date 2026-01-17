@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Navbar from './landing/Navbar';
 import TeamPage from './landing/TeamPage';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -97,17 +98,18 @@ const App = () => {
     <>
       <Routes>
         <Route path="/teams" element={
-          <div style={{ minHeight: '100vh', position: 'relative' }}>
-            <div style={{ position: 'relative', zIndex: 1 }}>
+          <div style={{ minHeight: '100vh', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ position: 'relative', zIndex: 1, flex: 1 }}>
               <Navbar onGetStartedClick={() => {}} onTeamClick={() => navigate('/teams')} currentPage="team" />
               <TeamPage onBack={() => navigate('/')} />
             </div>
+            <Footer />
           </div>
         } />
         
         <Route path="/dashboard" element={
-          <div style={{ minHeight: '100vh', position: 'relative' }}>
-            <div style={{ position: 'relative', zIndex: -1 }}>
+          <div style={{ minHeight: '100vh', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ position: 'relative', zIndex: -1, flex: 1 }}>
               <Navbar onGetStartedClick={() => {}} onTeamClick={() => navigate('/teams')} currentPage="dashboard" />
               <DashboardModal
                 onClose={handleBackToLanding}
@@ -115,6 +117,7 @@ const App = () => {
                 userProfile={userProfile}
               />
             </div>
+            <Footer />
           </div>
         } />
         
@@ -293,6 +296,7 @@ const App = () => {
             </div>
           </section>
         </main>
+        <Footer />
       </div>
 
       {/* Modal Overlay */}
