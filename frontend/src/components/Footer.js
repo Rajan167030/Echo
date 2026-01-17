@@ -22,11 +22,11 @@ const Footer = () => {
               ECHO is an AI-powered memory preservation system designed for individuals with memory challenges. Preserving precious moments while providing real-time support for both patients and caregivers.
             </p>
             <div className="footer-social-icons">
-              
-              <a href="https://twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
-              <a href="https://github.com" title="GitHub" target="_blank" rel="noopener noreferrer">🐙</a>
-              <a href="https://linkedin.com" title="LinkedIn" target="_blank" rel="noopener noreferrer">💼</a>
-              <a href="https://discord.com" title="Discord" target="_blank" rel="noopener noreferrer">💬</a>
+              <a href="https://instagram.com" title="Instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
+              <a href="https://twitter.com" title="Twitter" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a>
+              <a href="https://github.com" title="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub">🐙</a>
+              <a href="https://linkedin.com" title="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">💼</a>
+              <a href="https://discord.com" title="Discord" target="_blank" rel="noopener noreferrer" aria-label="Discord">💬</a>
             </div>
           </div>
 
@@ -40,10 +40,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-contact-item">
-              <span className="footer-contact-icon"></span>
+              <span className="footer-contact-icon">📱</span>
               <div>
-                <p className="footer-contact-label"></p>
-                <a href="tel:+1234567890" className="footer-contact-value"></a>
+                <p className="footer-contact-label">Phone</p>
+                <a href="tel:+1234567890" className="footer-contact-value">+1 (234) 567-890</a>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ const Footer = () => {
               <li><a href="#how-it-works">How it works</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#team">Our Team</a></li>
-              <li><a href="#faq"></a></li>
-              <li><a href="#blog"></a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
 
