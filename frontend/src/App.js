@@ -196,7 +196,7 @@ const App = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 sm:mb-10 md:mb-12 text-center text-white">Powerful Features</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
                 {[
-                  {title: "Blockchain Security", desc: "Memories and personal data are cryptographically secured on-chain, ensuring privacy, ownership, and immutability for future generations."},
+                  {title: "Internet Computer Protocol (ICP)", desc: "Privacy-first memory assistant built on the Internet Computer Protocol (ICP). Memories and personal data are cryptographically secured on-chain, ensuring privacy, ownership, and immutability for future generations."},
                   {title: "Smart Memory Recall", desc: "AI-powered memory retrieval with caregiver anchoring helps trigger and reinforce important memories through contextual reminders."},
                   {title: "Emotion Detection", desc: "Advanced sentiment analysis identifies emotional states and behavioral patterns, enabling empathetic responses and early intervention."},
                   {title: "Real-Time Speech Processing", desc: "State-of-the-art speech recognition captures conversations naturally, transcribing and analyzing in real-time with high accuracy."},
